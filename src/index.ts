@@ -181,7 +181,7 @@ export default function target(options: Options): PluginOption {
 
         if (targetOptions.version) {
           config.esbuild ??= {}
-          config.esbuild.target = targetOptions.version // Use `import()` with node<=13
+          config.esbuild.target ??= targetOptions.version // Use `import()` with node<=13
         }
 
         // Pre-Bundling avoid native modules.
