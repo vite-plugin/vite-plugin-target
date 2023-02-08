@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-target",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Make Vite support Electron, Node.js, etc.",
   "main": "index.js",
   "types": "types",
