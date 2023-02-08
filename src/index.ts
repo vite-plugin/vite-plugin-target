@@ -109,7 +109,7 @@ export const nativeImage = electron.nativeImage;
 export const shell = electron.shell;
 export const webFrame = electron.webFrame;
 export const deprecate = electron.deprecate;
-`
+`.trim()
   const PREFIX = '\0'
 
   return {
@@ -194,6 +194,6 @@ export default function target(options: Options): PluginOption {
         }
       },
     },
-    electronOptions.nodeIntegration && loadRendererNativeModule()
+    electronOptions.nodeIntegration && loadRendererNativeModule(),
   ]
 }

@@ -26,9 +26,7 @@ import target from 'vite-plugin-target'
 export default {
   plugins: [
     target({
-      'electron-renderer': {
-        nodeIntegration: true,
-      },
+      'electron-renderer': {},
     }),
   ],
 }
@@ -37,9 +35,7 @@ export default {
 export default {
   plugins: [
     target({
-      'electron-preload': {
-        nodeIntegration: true,
-      },
+      'electron-preload': {},
     }),
   ],
 }
@@ -91,7 +87,7 @@ export type Options =
 
 - For `node` `electron-main` `electron-preload`, the plugin only changes a few preset configurations.
 
-- `electron-renderer`.
+- `electron-renderer` with `nodeIntegration`.
 
   ```
   ┏————————————————————————————————————————┓                    ┏—————————————————┓
