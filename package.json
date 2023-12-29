@@ -6,6 +6,7 @@
   "types": "types",
   "exports": {
     ".": {
+      "types": "./types/index.d.ts",
       "import": "./index.mjs",
       "require": "./index.js"
     }
